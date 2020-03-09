@@ -1,0 +1,25 @@
+<%- include ('../includes/header') %>
+<%- include('../includes/head') %>
+<div>
+	<%for(i=0; i<data.length; i++){%><%=data[i].cate_title%><%}%>
+</div>
+<br>
+<div>
+	<table border=1>
+		<thead>
+			<th>cate_ownner</th>
+			<th>cate_title</th>
+			<th>user_nm</th>
+		</thead>
+		<tbody>
+			<%for(i=0; i<clubList.length; i++){%>
+			<tr>
+				<td><%=clubList[i].cate_ownner%></td>
+				<td><%=clubList[i].cate_title%></td>
+				<td><%=clubList[i].user_nm%></td>
+			</tr>
+			<%}%>
+		</tbody>
+	</table>
+</div>
+<%- include ('../includes/footer') %>

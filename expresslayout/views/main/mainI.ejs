@@ -1,0 +1,26 @@
+<%- include ('../includes/header') %>
+<%- include('../includes/head') %>
+<%- include('../../public/js/mainjs.js')%>
+<div>
+	<p style="cursor:pointer;"id="gosave">save</p>
+	<br>
+	<form id="frm" name="frm" method="post">
+	<select id="select">
+		<%for (var i=0; i<cateList.length; i++)  {%>
+			<option value="<%=cateList[i]['cate_no']%>"><%=cateList[i]['cate_title']%></option>
+		<%}%>
+	</select>
+
+	<table>
+		<tr>
+			<th>아이디</th>
+			<td><input type="text" name="user_id" id="user_id"/></td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td><input type="text" name="user_nm" id="user_nm"/></td>
+		</tr>
+	</table>
+	</form>
+</div>
+<%- include ('../includes/footer') %>

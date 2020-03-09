@@ -1,0 +1,153 @@
+/*리셋===================================================================*/
+* {
+	margin: 0;
+	padding: 0;
+}
+time {
+	display: inline;
+}
+/*기본 font 설정*/
+body {
+	font-size: 0.75em;
+	font-family: 돋움, dotum, 굴림, gulim, sans-serif;
+	color: #000;
+	background: #e3dfd9;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*이미지 설정*/
+img {
+	border: 0;
+	vertical-align: top;
+}
+/*리스트 설정*/
+ul, ol {
+	list-style: none;
+}
+/*테이블 설정*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+/*기본 form 설정*/
+select, input, textarea {
+	font-family: 돋움, dotum, 굴림, gulim, sans-serif;
+	font-size: 12px;
+}
+input[type="radio"] {
+	position: relative;
+	top: 2px;
+}
+input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
+input[type="submit"] {
+	cursor: pointer;
+	border: 0;
+}
+button {
+	cursor: pointer;
+	border: 0;
+}
+/*===================================================================리셋*/
+/*페이지==================================================================*/
+/*==================================================================페이지*/
+/*헤더===================================================================*/
+#header>hgroup {/*페이지 로고 영역*/
+	position: relative;
+	height: 60px;
+  background-color: beige;
+}
+.logo {/*페이지 로고*/
+	position: absolute;
+	bottom: 13px;
+	left: 50px;
+	overflow: hidden;
+}
+.logo img {
+	width: 144px;
+	height: 33px;
+	-webkit-animation-name: logoAnimation;
+	-webkit-animation-duration: 1s;
+}
+.theme {/*페이지 로고 슬로건*/
+	position: absolute;
+	top: 18px;
+	left: 200px;
+	overflow: hidden;
+}
+.theme img {
+	width: 78px;
+	height: 27px;
+	-webkit-animation-name: logoSloganAnimation;
+	-webkit-animation-duration: 1s;
+}
+#nav ul {/*메인메뉴 위치*/
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#nav li {/*메뉴 아이템*/
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+#nav a {
+	display: inline-block;
+	width: 130px;
+	font-family: NanumGothicExtraBoldWeb;
+	font-size: 120%;
+	color: #fffff;
+	line-height: 60px;
+}
+/*===================================================================헤더*/
+/*푸터===================================================================*/
+#footer { /*페이지 헤더*/
+	color: #888682;
+	font-size: 90%;
+	border-top: #c1beb9 solid 1px;
+}
+#footer .logo {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	padding-top: 20px;
+	padding-left: 7px;
+}
+#footer li {
+	display: inline-block;
+	padding-bottom: 5px;
+}
+#footer li a {
+	color: #888682;
+	font-weight: bold;
+}
+#footer address {
+	font-style: normal;
+}
+/*===================================================================풋터*/
+#page {
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#header {/*페이지 헤더*/
+	position: relative;
+	height: 110px;
+	margin-bottom: 20px;
+}
+#main {
+	position: relative;
+	padding:0 10px;
+}
+#footer { /*페이지 헤더*/
+	position: relative;
+	margin-top: 45px;
+	padding: 15px 0 15px 160px;
+}

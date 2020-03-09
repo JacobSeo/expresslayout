@@ -1,0 +1,21 @@
+<%- include ('../includes/header') %>
+<%- include('../includes/head') %>
+<%- include('../../public/js/mainjs.js')%>
+<div>
+	<p style="cursor:pointer;"id="golazyholder">save</p>&nbsp;&nbsp;
+	<a href="/main/insert">추가</a>
+</div>
+<div>
+<% if(clubList != null && clubList.length > 0){ %>
+			<ul class="band-club-list" id="listul">
+				<% for ( var i = 0; i < clubList.length; i++){ %>
+					<li>
+						<div class="ulli" data-seq="<%=clubList[i].cate_no%>" style="cursor:pointer"><%=clubList[i].cate_title%>(<%=clubList[i]['cnt']%>)</div>
+					</li>
+				<% } %>
+			</ul>
+		<% }else{ %>
+		<p>가입한 클럽이 없습니다. 아래에 표시된 네이버밴드 중 하나를 선택해주세요.</p>
+		<% } %>
+</div>
+<%- include ('../includes/footer') %>
