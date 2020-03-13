@@ -40,7 +40,6 @@ var meta = function(){
         return "<address>"+val+"</address>";
     }
     function setBusiness(val){
-        console.log("business " , val);
         var t = "<business>";
         var val = JSON.parse(val);
         for(var key in val){

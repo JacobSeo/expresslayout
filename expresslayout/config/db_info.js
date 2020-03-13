@@ -25,6 +25,9 @@ var dbconnection = {
 				console.info("mysql connection successfully.");
 			}
 		});
+	},
+	release : function(con){
+		return con.end();
 	}
 };
 
