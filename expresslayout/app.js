@@ -42,11 +42,6 @@ var sc = schedule.scheduleJob(rule, function(){
   console.log("3분마다 실행");
 });
 */
-app.use((req, res, next)=>{
-  console.log('request received');
-  next();
-});
-
 
 app.get('/', function(req, res){
   res.redirect('/main');
